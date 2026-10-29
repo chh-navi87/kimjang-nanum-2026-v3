@@ -1,12 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<meta property="og:type" content="website">
-<meta property="og:title" content="2026년 사랑과 협동의 김장나눔">
-<meta property="og:description" content="11월 18일(수) 김장 봉사자 모집과 후원 안내">
-<meta property="og:image" content="https://chh-navi87.github.io/kimjang-nanum-2026-v3/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://chh-navi87.github.io/kimjang-nanum-2026-v3/">
-<meta name="twitter:card" content="summary_large_image">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta property="og:type" content="website"><meta property="og:title" content="2026년 사랑과 협동의 김장나눔"><meta property="og:description" content="11월 18일(수) 김장 봉사자 모집과 후원 안내"><meta property="og:image" content="https://chh-navi87.github.io/kimjang-nanum-2026-v3/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://chh-navi87.github.io/kimjang-nanum-2026-v3/"><meta name="twitter:card" content="summary_large_image"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>2026년 사랑과 협동의 김장나눔</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -146,6 +138,39 @@ section h2{font-size:clamp(24px,4.6vw,32px);font-weight:700}
 .copy{font-family:var(--body);font-size:14px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--cabbage);background:var(--card);color:var(--cabbage);cursor:pointer;font-weight:600}
 .note{font-size:14px;color:var(--muted)}
 
+/* apply */
+.apply .sub{color:var(--muted);font-size:15px}
+.pick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.org-btn{font-family:var(--body);cursor:pointer;display:grid;gap:4px;justify-items:center;padding:20px 12px;border-radius:14px;border:2px solid var(--cabbage);background:var(--card);color:var(--cabbage)}
+.org-btn b{font-size:19px}
+.org-btn span{font-size:15px;font-weight:600;background:var(--cabbage);color:var(--card);padding:4px 16px;border-radius:999px}
+.org-btn[aria-expanded="true"]{background:var(--leaf)}
+#applyForm{display:grid;gap:16px;background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:20px}
+#applyForm[hidden],#applyForm [hidden]{display:none!important}
+#applyForm .to{font-weight:700;color:var(--cabbage)}
+#applyForm label.f{display:grid;gap:6px;font-weight:600;font-size:15px}
+#applyForm input[type=text],#applyForm input[type=tel],#applyForm textarea{font:inherit;font-size:16px;font-weight:400;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%;box-sizing:border-box}
+#applyForm input:focus,#applyForm textarea:focus{outline:2px solid var(--cabbage);outline-offset:1px}
+#applyForm fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+#applyForm legend{font-weight:600;font-size:15px;margin-bottom:6px}
+.opt{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;font-size:15px}
+.opt input{width:20px;height:20px;accent-color:var(--cabbage);margin:0}
+.opt:has(input:checked){border-color:var(--cabbage);background:var(--leaf)}
+.kind{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.amts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.part{display:grid;gap:16px}
+.acctbox{display:grid;gap:2px;background:var(--leaf);border-radius:10px;padding:14px}
+.acctbox span{font-size:13px;color:var(--muted);font-weight:600}
+.acctbox b{font-size:19px;font-variant-numeric:tabular-nums}
+.acctbox small{font-size:13px;color:var(--muted)}
+.acctbox .copy{justify-self:start;margin-top:6px}
+#fTime,#fAmt{font:inherit;font-size:16px;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%;box-sizing:border-box;margin-top:4px}
+.err{color:var(--chili);font-weight:600;font-size:14px;min-height:1em;margin:0}
+.send{font-family:var(--body);font-size:18px;font-weight:700;padding:16px;border-radius:12px;border:0;background:var(--chili);color:#fff;cursor:pointer}
+.fallback{display:grid;gap:8px;font-size:14px;color:var(--muted);border-top:1.5px dashed var(--line);padding-top:14px}
+.fallback[hidden]{display:none}
+.fallback pre{white-space:pre-wrap;font-family:var(--body);font-size:14px;background:var(--paper);border-radius:10px;padding:12px;margin:0;color:var(--ink)}
+.fallback .copy{justify-self:start}
 /* partners & footer */
 .partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;font-size:15px}
 .partners b{display:block;font-size:13px;color:var(--muted);letter-spacing:.04em;margin-bottom:4px}
@@ -310,7 +335,7 @@ footer small{opacity:.8;font-size:13px}
     <h3>신청 방법</h3>
     <ol>
       <li>참여할 시간(오전, 오후, 종일)을 정해 주세요.</li>
-      <li>전화나 문자로 <b>춘천두레생협 <span class="tel">010-6653-6294</span></b> 또는 <b>원주생협 <span class="tel">010-9966-1891</span></b>에 이름, 연락처, 참여 시간, 카풀 필요 여부, 봉사 시간 필요 여부를 알려 주세요.</li>
+      <li>맨 아래 <a href="#apply"><b>신청하기</b></a> 버튼으로 보내거나, 전화나 문자로 <b>춘천두레생협 <span class="tel">010-6653-6294</span></b> 또는 <b>원주생협 <span class="tel">010-9966-1891</span></b>에 이름, 연락처, 참여 시간, 카풀 필요 여부, 봉사 시간 필요 여부를 알려 주세요.</li>
       <li>11월 14일(금)에 마감하고, 카풀 차량과 모이는 시간을 개별로 안내합니다.</li>
     </ol>
   </div>
@@ -366,12 +391,85 @@ footer small{opacity:.8;font-size:13px}
   <p class="kicker">함께 만드는 곳</p>
   <div class="partners">
     <div><b>주최</b>원주생협, 춘천두레생협<br>두레축산, 강원유기농, 원주생명농업</div>
-    <div><b>후원</b>두레생협연합회 강원지역협의회, 두레생산자회, 두레강원지역생산자회, 씨알살림축산, ㈜담채원</div>
+    <div><b>후원</b>두레생협연합회 강원지역협의회, 두레생산자회, 두레강원지역생산자회, 씨알살림축산</div>
   </div>
 </div></section>
 
+<section id="apply" class="apply"><div class="wrap">
+  <p class="kicker">신청하기</p>
+  <h2>가까운 생협을 골라 신청해 주세요</h2>
+  <p class="sub">자원봉사나 후원 중 하나를 고르고 내용을 적어 ‘문자 보내기’를 누르면 고른 생협 담당자에게 보낼 문자가 바로 만들어져요.</p>
+  <div class="pick" role="group" aria-label="신청할 생협">
+    <button type="button" class="org-btn" data-org="춘천두레생협" data-tel="010-6653-6294" data-acct="농협 351-0320-3635-43" data-holder="춘천두레소비자생활협동조합" aria-expanded="false" aria-controls="applyForm"><b>춘천두레생협</b><span>신청하기</span></button>
+    <button type="button" class="org-btn" data-org="원주생협" data-tel="010-9966-1891" data-acct="농협 355-0056-4051-33" data-holder="원주소비자생활협동조합" aria-expanded="false" aria-controls="applyForm"><b>원주생협</b><span>신청하기</span></button>
+  </div>
+  <form id="applyForm" hidden novalidate>
+    <p class="to" id="applyTo"></p>
+    <label class="f">이름<input type="text" id="fName" autocomplete="name" required></label>
+    <label class="f">전화번호<input type="tel" id="fTel" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000" required></label>
+    <fieldset>
+      <legend>무엇을 신청하시나요?</legend>
+      <div class="kind">
+        <label class="opt"><input type="radio" name="kind" value="vol">자원봉사</label>
+        <label class="opt"><input type="radio" name="kind" value="don">후원</label>
+      </div>
+    </fieldset>
+    <div class="part" id="partVol" hidden>
+      <fieldset>
+        <legend>참여 시간</legend>
+        <label class="opt"><input type="radio" name="vtime" value="오전 09:00~13:00">오전 09:00~13:00</label>
+        <label class="opt"><input type="radio" name="vtime" value="오후 13:00~16:00">오후 13:00~16:00</label>
+        <label class="opt"><input type="radio" name="vtime" value="종일 09:00~16:00">종일 09:00~16:00</label>
+        <label class="opt"><input type="radio" name="vtime" value="기타">기타 (직접 적기)</label>
+        <input type="text" id="fTime" placeholder="예: 10시부터 12시까지 가능해요" hidden>
+      </fieldset>
+      <fieldset>
+        <legend>자원봉사 시간 인정</legend>
+        <div class="kind">
+          <label class="opt"><input type="radio" name="vhour" value="필요">필요해요</label>
+          <label class="opt"><input type="radio" name="vhour" value="필요 없음">필요 없어요</label>
+        </div>
+      </fieldset>
+      <label class="f">기타 남길 말씀 (선택)<textarea id="fMemo" rows="2" placeholder="카풀이 필요하시면 적어 주세요"></textarea></label>
+    </div>
+    <div class="part" id="partDon" hidden>
+      <fieldset>
+        <legend>후원 금액</legend>
+        <div class="amts">
+          <label class="opt"><input type="radio" name="damt" value="1만 원">1만 원</label>
+          <label class="opt"><input type="radio" name="damt" value="2만 5천 원">2만 5천 원</label>
+          <label class="opt"><input type="radio" name="damt" value="5만 원">5만 원</label>
+          <label class="opt"><input type="radio" name="damt" value="10만 원">10만 원</label>
+          <label class="opt"><input type="radio" name="damt" value="직접">직접 적기</label>
+        </div>
+        <input type="text" id="fAmt" inputmode="numeric" placeholder="금액 (예: 30000)" hidden>
+      </fieldset>
+      <div class="acctbox">
+        <span>후원 계좌</span>
+        <b id="dAcct"></b>
+        <small id="dHolder"></small>
+        <button type="button" class="copy" id="copyAcct">계좌번호 복사</button>
+      </div>
+      <fieldset>
+        <legend>입금 여부</legend>
+        <div class="kind">
+          <label class="opt"><input type="radio" name="dpaid" value="입금 완료">입금 완료</label>
+          <label class="opt"><input type="radio" name="dpaid" value="입금 예정">입금 예정</label>
+        </div>
+      </fieldset>
+    </div>
+    <p class="err" id="fErr" role="alert"></p>
+    <button type="submit" class="send">문자 보내기</button>
+    <div class="fallback" id="fallback" hidden>
+      <span>문자 앱이 열리지 않았다면 아래 내용을 복사해서 <b class="tel" id="fbTel"></b>로 보내 주세요.</span>
+      <pre id="msgOut"></pre>
+      <button type="button" class="copy" id="copyMsg">내용 복사</button>
+    </div>
+  </form>
+</div></section>
+
 <footer><div class="wrap">
-  <h2>신청 및 문의</h2>
+  <h2>문의</h2>
   <p>춘천두레생협 010-6653-6294<br>원주생협 010-9966-1891</p>
   <small>2026년 사랑과 협동의 김장나눔 · 두레생협 강원지역협의회</small>
 </div></footer>
@@ -479,6 +577,62 @@ footer small{opacity:.8;font-size:13px}
       try{navigator.clipboard.writeText(txt).then(function(){done(true);},sel);}catch(e){sel();}
     });
   });
+
+  // 신청하기: 생협을 고르고 적은 내용을 해당 번호로 보낼 문자로 만듭니다.
+  (function(){
+    var form=document.getElementById('applyForm'), btns=[].slice.call(document.querySelectorAll('.org-btn')), cur=null;
+    var err=document.getElementById('fErr'), fb=document.getElementById('fallback'), out=document.getElementById('msgOut');
+    var pv=document.getElementById('partVol'), pd=document.getElementById('partDon'), amt=document.getElementById('fAmt');
+    function val(n){var r=form.querySelector('input[name='+n+']:checked');return r?r.value:'';}
+    btns.forEach(function(b){b.addEventListener('click',function(){
+      cur={org:b.getAttribute('data-org'),tel:b.getAttribute('data-tel'),acct:b.getAttribute('data-acct'),holder:b.getAttribute('data-holder')};
+      btns.forEach(function(o){o.setAttribute('aria-expanded',o===b?'true':'false');});
+      document.getElementById('applyTo').innerHTML=cur.org+'로 신청합니다 <span style="white-space:nowrap">('+cur.tel+')</span>';
+      document.getElementById('dAcct').textContent=cur.acct; document.getElementById('dHolder').textContent='예금주 '+cur.holder+' · 입금자명 뒤에 ‘김장’';
+      form.hidden=false; fb.hidden=true; err.textContent='';
+      form.scrollIntoView({behavior:'smooth',block:'start'});
+    });});
+    [].forEach.call(form.querySelectorAll('input[name=kind]'),function(r){r.addEventListener('change',function(){pv.hidden=val('kind')!=='vol';pd.hidden=val('kind')!=='don';fb.hidden=true;});});
+    [].forEach.call(form.querySelectorAll('input[name=vtime]'),function(r){r.addEventListener('change',function(){var t=document.getElementById('fTime');t.hidden=val('vtime')!=='기타';if(!t.hidden)t.focus();});});
+    [].forEach.call(form.querySelectorAll('input[name=damt]'),function(r){r.addEventListener('change',function(){amt.hidden=val('damt')!=='직접';if(!amt.hidden)amt.focus();});});
+    document.getElementById('copyAcct').addEventListener('click',function(){copyText(cur.acct.replace('농협 ',''),this,'계좌번호 복사');});
+    function copyText(t,b,label){
+      function done(){b.textContent='복사했어요';setTimeout(function(){b.textContent=label;},1800);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){});}
+      else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}ta.remove();}
+    }
+    function fail(m){err.textContent=m;return false;}
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=document.getElementById('fName').value.trim(), tel=document.getElementById('fTel').value.trim(), kind=val('kind'), lines;
+      if(!name)return fail('이름을 적어 주세요.');
+      if(tel.replace(/\D/g,'').length<9)return fail('연락받으실 전화번호를 적어 주세요.');
+      if(!kind)return fail('자원봉사 신청인지 후원 신청인지 골라 주세요.');
+      if(kind==='vol'){
+        var vt=val('vtime'); if(!vt)return fail('참여 시간을 골라 주세요.');
+        if(vt==='기타'){vt=document.getElementById('fTime').value.trim();if(!vt)return fail('참여 가능한 시간을 적어 주세요.');vt='기타 - '+vt;}
+        if(!val('vhour'))return fail('자원봉사 시간 인정이 필요한지 골라 주세요.');
+        lines=['[2026 김장나눔 자원봉사 신청]','이름: '+name,'연락처: '+tel,'참여 시간: '+vt,'봉사 시간 인정: '+val('vhour')];
+        var memo=document.getElementById('fMemo').value.trim(); if(memo)lines.push('남긴 말씀: '+memo);
+      }else{
+        var a=val('damt'); if(!a)return fail('후원 금액을 골라 주세요.');
+        if(a==='직접'){var d=amt.value.replace(/\D/g,'');if(!d)return fail('후원 금액을 적어 주세요.');a=Number(d).toLocaleString('ko-KR')+'원';}
+        if(!val('dpaid'))return fail('입금 완료인지 입금 예정인지 골라 주세요.');
+        lines=['[2026 김장나눔 후원 신청]','이름: '+name,'연락처: '+tel,'후원 금액: '+a,'입금 여부: '+val('dpaid'),'계좌: '+cur.acct];
+      }
+      err.textContent='';
+      var body=lines.join('\n'), num=cur.tel.replace(/-/g,'');
+      var ios=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+      out.textContent=body; document.getElementById('fbTel').textContent=cur.org+' '+cur.tel; fb.hidden=false;
+      window.location.href='sms:'+num+(ios?'&':'?')+'body='+encodeURIComponent(body);
+    });
+    document.getElementById('copyMsg').addEventListener('click',function(){
+      var t=out.textContent, b=this;
+      function done(){b.textContent='복사했어요';setTimeout(function(){b.textContent='내용 복사';},1800);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){});}
+      else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}ta.remove();}
+    });
+  })();
 })();
 </script>
 
