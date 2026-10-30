@@ -587,7 +587,7 @@ footer small{opacity:.8;font-size:13px}
     btns.forEach(function(b){b.addEventListener('click',function(){
       cur={org:b.getAttribute('data-org'),tel:b.getAttribute('data-tel'),acct:b.getAttribute('data-acct'),holder:b.getAttribute('data-holder')};
       btns.forEach(function(o){o.setAttribute('aria-expanded',o===b?'true':'false');});
-      document.getElementById('applyTo').innerHTML=cur.org+'로 신청합니다 <span style="white-space:nowrap">('+cur.tel+')</span>';
+      document.getElementById('applyTo').innerHTML=cur.org+'으로 신청합니다<span style="white-space:nowrap">('+cur.tel+')</span>';
       document.getElementById('dAcct').textContent=cur.acct; document.getElementById('dHolder').textContent='예금주 '+cur.holder+' · 입금자명 뒤에 ‘김장’';
       form.hidden=false; fb.hidden=true; err.textContent='';
       form.scrollIntoView({behavior:'smooth',block:'start'});
