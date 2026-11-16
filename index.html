@@ -65,10 +65,10 @@ a{color:var(--cabbage)}
 .boxes.done .grid{gap:0;border-radius:8px;overflow:hidden}
 .boxes.done .grid i{border-radius:0;border-color:transparent;animation:none}
 .grid i{aspect-ratio:1;border-radius:2px;background:var(--leaf);border:1px solid var(--line);max-width:100%}
-.grid i.c{background-color:#FFF0BD;border-color:transparent}
+.grid i.c{background-color:var(--chili);border-color:transparent}
 .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:13px;color:var(--muted)}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--leaf);border:1px solid var(--line)}
-.legend .c::before{background:#FFF0BD;border-color:#F2B544}
+.legend .c::before{background:var(--chili);border-color:var(--chili)}
 
 /* sections */
 section{border-top:1px solid var(--line)}
@@ -532,6 +532,7 @@ footer small{opacity:.8;font-size:13px}
     x.font='700 '+s3+'px '+fam;x.fillStyle='#6B4A33';x.fillText('250상자를 함께 채워 주셔서 고맙습니다',mx,top+s1+s2+u*5+s3/2);
   }
   function paintText(){
+    return; /* 그림 조각 대신 단색으로 채움 */
     if(!n) return;
     var W=g.clientWidth,H=g.clientHeight; if(!W||!H) return;
     var dpr=Math.min(2,window.devicePixelRatio||1), c=document.createElement('canvas');
